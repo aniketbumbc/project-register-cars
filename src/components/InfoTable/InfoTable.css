@@ -1,0 +1,218 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: rgb(255, 226, 79);
+}
+tr:nth-child(odd) {
+  background-color: rgb(123 111 159);
+  color: rgb(255, 226, 79);
+}
+thead th {
+  color: rgb(255, 226, 79);
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.table-footer {
+  color: rgb(255, 226, 79);
+  margin: 10px;
+}
+.tableTitle {
+  text-align: center;
+}
+.tableButtons {
+  margin: 10px;
+}
+h3 {
+  color: rgb(255, 226, 79);
+}
+button {
+  background-color: rgb(255, 226, 79);
+  border-radius: 3px;
+}
+
+/* Media for tablets / ipads */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(255, 226, 79);
+  }
+  tr:nth-child(odd) {
+    background-color: rgb(123 111 159);
+    color: rgb(255, 226, 79);
+  }
+  td {
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 40%;
+  }
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  .table-footer,
+  .tableButtons {
+    margin: 10px;
+  }
+  .tableTitle {
+    text-align: center;
+  }
+  thead {
+    display: none;
+  }
+  tbody td:first-child:before {
+    content: 'Make';
+    font-weight: bold;
+  }
+  tbody td:nth-child(2):before {
+    content: 'Model';
+    font-weight: bold;
+  }
+  tbody td:nth-child(3):before {
+    content: 'Engine PowerPS';
+    font-weight: bold;
+  }
+  tbody td:nth-child(4):before {
+    content: 'Engine PowerKW';
+    font-weight: bold;
+  }
+  tbody td:nth-child(5):before {
+    content: 'Fuel Type';
+    font-weight: bold;
+  }
+  tbody td:nth-child(6):before {
+    content: 'Body Type';
+    font-weight: bold;
+  }
+  tbody td:nth-child(7):before {
+    content: 'Engine Capacity';
+    font-weight: bold;
+  }
+}
+
+/** Media for cell phones**/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgb(255, 226, 79);
+  }
+  tr:nth-child(odd) {
+    background-color: rrgb(123 111 159);
+    color: rgb(255, 226, 79);
+  }
+
+  td {
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 65%;
+  }
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  .tableTitle {
+    text-align: center;
+  }
+  .table-footer,
+  .tableButtons {
+    margin: 10px;
+  }
+  .table-footer,
+  .tableButtons {
+    margin: 10px;
+  }
+  thead {
+    display: none;
+  }
+  tbody td:first-child:before {
+    content: 'Make';
+    font-weight: bold;
+  }
+  tbody td:nth-child(2):before {
+    content: 'Model';
+    font-weight: bold;
+  }
+  tbody td:nth-child(3):before {
+    content: 'Engine PowerPS';
+    font-weight: bold;
+  }
+  tbody td:nth-child(4):before {
+    content: 'Engine PowerKW';
+    font-weight: bold;
+  }
+  tbody td:nth-child(5):before {
+    content: 'Fuel Type';
+    font-weight: bold;
+  }
+  tbody td:nth-child(6):before {
+    content: 'Body Type';
+    font-weight: bold;
+  }
+  tbody td:nth-child(7):before {
+    content: 'Engine Capacity';
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,69 @@
+.makes {
+  margin: 10px;
+  width: 18%;
+}
+
+.container {
+  margin: 20px;
+  display: block;
+}
+
+.dropdownInfo {
+  display: flex;
+  justify-content: center;
+  left: 50% !important;
+  right: 50% !important;
+  text-align: center !important;
+}
+
+.disable {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.Dropdown-control {
+  background-color: rgb(255, 226, 79);
+  color: rgb(126, 87, 194);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.Dropdown-menu {
+  background-color: rgb(255, 226, 79);
+  font-weight: bold;
+}
+
+.Dropdown-option {
+  color: rgb(126, 87, 194);
+}
+
+/* tablets / ipads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .makes {
+    width: 35%;
+  }
+}
+
+/* mobiles */
+@media (min-width: 481px) and (max-width: 767px) {
+  .dropdownInfo {
+    display: block;
+  }
+
+  .makes {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+/* small mobiles */
+@media (min-width: 320px) and (max-width: 480px) {
+  .dropdownInfo {
+    display: block;
+  }
+
+  .makes {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
